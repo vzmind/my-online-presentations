@@ -9,3 +9,7 @@ set :public_folder, File.dirname(__FILE__) + '/assets'
 get '/' do
   haml :intro
 end
+
+get '/munich-2012' do
+  haml :munich2012
+end

@@ -1,0 +1,229 @@
+%section.slide
+  %h1
+    Getting to know each others
+%section.slide
+  %ol
+    %li either usual approach (my name is …. who are you?)
+    %li either QCM?
+
+%section.slide
+  %h1
+    Heroku an introduction
+%section.slide
+  %h2 Success heroku
+  %ol
+    %li Cloud App
+    %p few figures
+    %li Diaspora
+    %p few figures
+    %li Asics
+    %p few figures
+%section.slide
+  %h2 Languages
+  %ol
+    %li Ruby 
+    %li Node.js 
+    %li Clojure 
+    %li Java 
+    %li Python 
+    %li Scala
+%section.slide
+  %h2 Add-ons
+  %ol
+    %li Databases
+    %p postgreSQL 
+    %p mySQL
+    %p CouchDB
+    %p MongoDB
+%section.slide
+  %h2 Add-ons
+  %ol
+    %li queuing
+    %p rabbitMQ
+%section.slide
+  %h2 Add-ons
+  %ol
+    %li Mail
+    %p sendgrid
+%section.slide
+  %h2 Add-ons
+  %ol
+    %li External API
+%section.slide
+  %h2 Add-ons
+  %ol
+    %li monitoring and performance
+%section.slide
+  %h2 Main advantages
+  %ol
+    %li Ease of use
+    %li Deploy based on git
+    %p git push heroku => deployment done
+    %li Scaling made humanly feasible 
+    %p git scale web=5 => 5 web server working for you
+    %li Billable per minute
+
+%section.slide
+  %h1
+    Rails an introduction
+%section.slide
+  %h2 Add-ons
+  %ol
+    the leading MVC framework, web standard de facto
+    all other framework adapt to Rails approach
+    symphony
+    django
+%section.slide
+  %h2 Success story
+  %ol
+    %li Groupon
+    %li github
+    %li twitter
+    %li xing
+    %li shopify
+%section.slide
+  %h2 Success story
+  %ol
+    Wall of fame using ref from http://rubyonrails.org/applications and http://www.setfiremedia.com/blog/50-of-the-best-websites-developed-using-ruby-on-rails
+%section.slide
+  %h2 Why so popular?
+  %ol
+    %li MVC structuring application
+    %li ORM
+    %li test oriented
+    %li caching
+    %li scaffolding
+    %li fast development
+%section.slide
+  %h2 Market figures
+  %ol
+    %li Developer market growth
+    %li Cost of dev
+    %li Reduce time to market
+    %li the startup choice
+
+%section.slide
+  %h1
+    What’s behind a Facebook app?
+%section.slide
+  %h2 What is the Open Graph API
+  %ol
+    %li How to use it in Ruby ?
+
+%section.slide
+  %h1
+    Why extending force.com?
+%section.slide
+  %h2 Known limits of Salesforce and force.com (1)
+  %ol
+    %li Cron limit of 10 jobs in SFDC
+    %p http://www.salesforce.com/us/developer/docs/apexcode/Content/apex_gov_limits.htm
+    %li Put the computation out on heroku
+    %li Data driven website are great on force.com
+    %li Salesforce is expensive to 1000£/Gb/years
+    %li Force.com is B2B tool. The customer portals do solve these problems but in an awkward way - for each authenticated user you need a license. Difficult to predict and budget for. Heroku suit of development languages can be either B2B or B2C and billing is pro rataed on a usage- instead of seat-basis.
+    %p Limits are often unavoidably (i.e. even best practice or creative code won’t solve these issues)  hit for:
+%section.slide
+  %h2 Known limits of Salesforce and force.com (2)
+  %ol
+    %li Complex computation
+    %p Computation over large data sets
+    %p computation over broad data models
+    %li heavy front-ends i.e. those that require large viewstates
+    %li large volumes of traffic on Force.com sites
+%section.slide
+  %h2 Known limits of Salesforce and force.com (3)
+  %ol
+    %li large amount of data on SFDC (tree structure too deep => governor limit (Heap size 6Mb) per transaction). Code can only execute a certain number of line per transation(200 000 lines)
+    Use cases
+    BigData mining more intelligently
+    mashing up APIs
+
+
+
+%section.slide
+  %h1
+    Solving the right problem with the right tool
+%section.slide
+  %h2 Ruby/Python
+  %ol
+    %li purely object oriented language
+    %li Large librairies with excellent web coverage (FTP, HTTP, DB, API)
+%section.slide
+  %h2 Java
+  %ol
+    %li Largest develop community - cheap and plentiful resource
+    %li Most widely used language in business - lowered barrier to entry for company owners/CIOs
+     
+%section.slide
+  %h2 Scala
+  %ol
+    %li Smart extension of Java (usage of Javava library, JVM)
+    %li Sounds like Ruby/Python, smell like clojure/erlang but it’s scala
+    %li Dynamic
+%section.slide
+  %h2 Clojure
+  %ol
+    %li dialect of Lisp, easy to learn
+    %li functional extension of Java (usage of Java library, JVM)
+    %li as fast as java
+    %li dynamic
+%section.slide
+  %h2 Node.js
+  %ol
+    %li Event driven server
+    %li heavy I/O traffic
+%section.slide
+  %h2 Relational databases
+  %ol
+    %li usual approach of a well structured data with predictable complexity
+%section.slide
+  %h2 In memory Key-value Stores
+  %ol
+    %li redis or memcached
+    %li for rapidely changing data
+    %li fast access
+    %li no need to persist data
+    %li use case: stock market, friend feeds
+%section.slide
+  %h2 Document oriented DB
+  %ol
+    %li CouchDB and MongoDB
+    %li non or semi structured document
+    %li massive scaling
+    %li content versionning
+    %li use case:
+%section.slide
+  %h2 Database.com
+  %ol
+    %li connection to your SI
+    %li integration with SFDC
+    %li social DB
+    %li use case: extending SFDC, exposing existing sObjects on public website
+%section.slide
+  %h2 BigData approach
+  %ol
+    %li map reduce
+    %li hadoop with Tresure Data
+    %li Data analysis
+
+%section.slide
+  %h1
+    Seeing is believing
+   %p
+    Real use cases with real code
+%section.slide
+  %h2 Tquila mobile
+  %ol
+    %li use case
+    %li need presentation and access
+    %li demo
+%section.slide
+  %h1 architecture schema
+%section.slide
+  %h2 WTA
+  %ol
+    %li use case
+    %li demo
+%section.slide
+  %h1 architecture schema
