@@ -1,0 +1,27 @@
+#pictures {
+  float: right;
+  width: 50%
+}
+#without-pictures {
+  width: 50%;
+  float: left;
+}
+#with-picture ul{
+  margin-bottom: 0;
+}
+
+#with-pictures li img{
+  float: right;
+  width: 100px;
+  margin-bottom: 0;
+ }
+#emphasize {
+  position: absolute;
+  left: 220px;
+  bottom: 100px;
+}
+#emphasize-low {
+  position: absolute;
+  left: 300px;
+  bottom: 50px;
+}

@@ -1,81 +1,173 @@
+- content_for :head do
+  %title Enpower your ORG with Heroku by @vzmind 
+  %link{:href => "munich2012/style.css", :rel => "stylesheet"}
+%section.slide
+  %h1
+    'Enpower your ORG with Heroku'
 %section.slide
   %h1
     Getting to know each others
 %section.slide
-  %ol
-    %li either usual approach (my name is …. who are you?)
-    %li either QCM?
-
+  %h2  My name is Vincent Spehner
+  %ul
+    %li From business to tech
+    %li Pragmatic Ruby addict
+    %li Active member of the french Ruby community
+  #emphasize
+    %img{:src => "munich2012/vzmind.png"}
 %section.slide
   %h1
     Heroku an introduction
 %section.slide
   %h2 Success heroku
-  %ol
-    %li Cloud App
-    %p few figures
-    %li Diaspora
-    %p few figures
-    %li Asics
-    %p few figures
+  #with-pictures
+    %ul
+      %li 
+        Cloud app: File sharing solution
+        %img{:src => "munich2012/logo_cloud_app.png"}
+        %ul
+          %li 1 000 000 users
+          %li Heroku + Amazon S3
+          %li Sendgrid addon
+      %li 
+        Diaspora: Open source Facebook
+        %img{:src => "munich2012/logo_diaspora.png"}
+        %ul
+          %li no devops strategy
+          %li migration in 5 days
+      %li 
+        ASICS: support your marathoner
+        %img{:src => "munich2012/logo_asics.png"}
+        %ul
+          %li 3 weeks dev before LIVE
+          %li Live brodacasting of FB, Twitter, video messages
+          %li Fast enconding using Zencoder
+      %p few figures
 %section.slide
   %h2 Languages
-  %ol
-    %li Ruby 
-    %li Node.js 
-    %li Clojure 
-    %li Java 
-    %li Python 
-    %li Scala
+  #without-pictures
+    %ul
+      %li 
+        Ruby: 
+        %ul
+          %li Historical language
+      %li 
+        Python: 
+        %ul
+          %li Google language
+      %li 
+        Scala: 
+        %ul
+          %li Java dynamic language
+      %li 
+        Clojure: 
+        %ul
+          %li Java functional language
+      %li 
+        Node.js: 
+        %ul
+          %li Fast event-based server
+      %li 
+        Java: 
+        %ul
+          %li historical language
+  #pictures
+    %img{:src => "munich2012/heroku_languages.png"}
 %section.slide
-  %h2 Add-ons
-  %ol
-    %li Databases
-    %p postgreSQL 
-    %p mySQL
-    %p CouchDB
-    %p MongoDB
+  %h2 Add-ons: Databases
+  #without-pictures
+    %ul
+      %li Database.com
+      %li Neo4j
+      %li mySQL
+      %li CouchDB
+      %li postgreSQL 
+      %li MongoDB
+      %li Redis
+      %li Memcached
+  #pictures
+    %img{:src => "munich2012/heroku_db_logo.png"}
+  #emphasize
+    = "=> Death of Monolithic databases Hegemony, welcome to Polyglot databases "
 %section.slide
-  %h2 Add-ons
-  %ol
-    %li queuing
-    %p rabbitMQ
+  %h2 Add-ons: Message Queue
+  #without-pictures
+    %ul
+      %li Pusher app
+      %li IronMQ
+      %li RabbitMQ
+  #pictures
+    %img{:src => "munich2012/heroku_messaging_logo.png"}
+  #emphasize
+    = "=> High level architecture standard natively available"
 %section.slide
-  %h2 Add-ons
-  %ol
-    %li Mail
-    %p sendgrid
+  %h2 Add-ons: Mail
+  #without-pictures
+    %ul
+      %li CloudMailIn
+      %li Sendgrid
+      %li Mailgun
+  #pictures
+    %img{:src => "munich2012/heroku_mail_logo.png"}
+  #emphasize
+    = "=> No more email server blacklisted or overloaded"
 %section.slide
-  %h2 Add-ons
-  %ol
-    %li External API
+  %h2 Add-ons: External API
+  #without-pictures
+    %ul
+      %li PandaStream
+      %li Chargify
+      %li Zencoder
+      %li Raydash 
+  #pictures
+    %img{:src => "munich2012/heroku_services_logo.png"}
+  #emphasize
+    = "=> Video encoding and streaming, online payment simple as a command line"
 %section.slide
-  %h2 Add-ons
-  %ol
-    %li monitoring and performance
+  %h2 Add-ons: System and Monitoring
+  #without-pictures
+    %ul
+      %li New Relic
+      %li DNS
+      %li Log
+      %li Cron
+      %li SSL
+  #pictures
+    %img{:src => "munich2012/heroku_system_logo.png"}
+  #emphasize
+    = "=> Sysadmin tools reduced to the minimum"
 %section.slide
-  %h2 Main advantages
-  %ol
-    %li Ease of use
-    %li Deploy based on git
-    %p git push heroku => deployment done
-    %li Scaling made humanly feasible 
-    %p git scale web=5 => 5 web server working for you
-    %li Billable per minute
+  %h2 Heroku main advantages
+  %ul
+    %li No devops or sysadmin role
+    %li Simplicity of usage
+    %li 
+      Deploy based on git command
+      %pre
+        %code git push heroku => deployment done
+    %li 
+      Web application Scaling made easy 
+      %pre
+        %code git scale web=5 => 5 web servers working for you
+    %li 
+      Billable on-demand
+      %p 0.25$ per minute
+  #emphasize-low
+    = "=> Building your stack as never been that simple !!"
 
 %section.slide
   %h1
     Rails an introduction
 %section.slide
   %h2 Add-ons
-  %ol
+  %ul
     the leading MVC framework, web standard de facto
     all other framework adapt to Rails approach
     symphony
     django
 %section.slide
   %h2 Success story
-  %ol
+  %ul
     %li Groupon
     %li github
     %li twitter
@@ -83,11 +175,11 @@
     %li shopify
 %section.slide
   %h2 Success story
-  %ol
+  %ul
     Wall of fame using ref from http://rubyonrails.org/applications and http://www.setfiremedia.com/blog/50-of-the-best-websites-developed-using-ruby-on-rails
 %section.slide
   %h2 Why so popular?
-  %ol
+  %ul
     %li MVC structuring application
     %li ORM
     %li test oriented
@@ -96,7 +188,7 @@
     %li fast development
 %section.slide
   %h2 Market figures
-  %ol
+  %ul
     %li Developer market growth
     %li Cost of dev
     %li Reduce time to market
@@ -107,7 +199,7 @@
     What’s behind a Facebook app?
 %section.slide
   %h2 What is the Open Graph API
-  %ol
+  %ul
     %li How to use it in Ruby ?
 
 %section.slide
@@ -115,7 +207,7 @@
     Why extending force.com?
 %section.slide
   %h2 Known limits of Salesforce and force.com (1)
-  %ol
+  %ul
     %li Cron limit of 10 jobs in SFDC
     %p http://www.salesforce.com/us/developer/docs/apexcode/Content/apex_gov_limits.htm
     %li Put the computation out on heroku
@@ -125,7 +217,7 @@
     %p Limits are often unavoidably (i.e. even best practice or creative code won’t solve these issues)  hit for:
 %section.slide
   %h2 Known limits of Salesforce and force.com (2)
-  %ol
+  %ul
     %li Complex computation
     %p Computation over large data sets
     %p computation over broad data models
@@ -133,7 +225,7 @@
     %li large volumes of traffic on Force.com sites
 %section.slide
   %h2 Known limits of Salesforce and force.com (3)
-  %ol
+  %ul
     %li large amount of data on SFDC (tree structure too deep => governor limit (Heap size 6Mb) per transaction). Code can only execute a certain number of line per transation(200 000 lines)
     Use cases
     BigData mining more intelligently
@@ -146,40 +238,40 @@
     Solving the right problem with the right tool
 %section.slide
   %h2 Ruby/Python
-  %ol
+  %ul
     %li purely object oriented language
     %li Large librairies with excellent web coverage (FTP, HTTP, DB, API)
 %section.slide
   %h2 Java
-  %ol
+  %ul
     %li Largest develop community - cheap and plentiful resource
     %li Most widely used language in business - lowered barrier to entry for company owners/CIOs
      
 %section.slide
   %h2 Scala
-  %ol
+  %ul
     %li Smart extension of Java (usage of Javava library, JVM)
     %li Sounds like Ruby/Python, smell like clojure/erlang but it’s scala
     %li Dynamic
 %section.slide
   %h2 Clojure
-  %ol
+  %ul
     %li dialect of Lisp, easy to learn
     %li functional extension of Java (usage of Java library, JVM)
     %li as fast as java
     %li dynamic
 %section.slide
   %h2 Node.js
-  %ol
+  %ul
     %li Event driven server
     %li heavy I/O traffic
 %section.slide
   %h2 Relational databases
-  %ol
+  %ul
     %li usual approach of a well structured data with predictable complexity
 %section.slide
   %h2 In memory Key-value Stores
-  %ol
+  %ul
     %li redis or memcached
     %li for rapidely changing data
     %li fast access
@@ -187,7 +279,7 @@
     %li use case: stock market, friend feeds
 %section.slide
   %h2 Document oriented DB
-  %ol
+  %ul
     %li CouchDB and MongoDB
     %li non or semi structured document
     %li massive scaling
@@ -195,14 +287,14 @@
     %li use case:
 %section.slide
   %h2 Database.com
-  %ol
+  %ul
     %li connection to your SI
     %li integration with SFDC
     %li social DB
     %li use case: extending SFDC, exposing existing sObjects on public website
 %section.slide
   %h2 BigData approach
-  %ol
+  %ul
     %li map reduce
     %li hadoop with Tresure Data
     %li Data analysis
@@ -214,7 +306,7 @@
     Real use cases with real code
 %section.slide
   %h2 Tquila mobile
-  %ol
+  %ul
     %li use case
     %li need presentation and access
     %li demo
@@ -222,7 +314,7 @@
   %h1 architecture schema
 %section.slide
   %h2 WTA
-  %ol
+  %ul
     %li use case
     %li demo
 %section.slide
