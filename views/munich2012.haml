@@ -3,7 +3,7 @@
   %link{:href => "munich2012/style.css", :rel => "stylesheet"}
 %section.slide
   %h1
-    'Enpower your ORG with Heroku'
+    "Empower your ORG with Heroku"
 %section.slide
   %h1
     Getting to know each other
@@ -13,8 +13,17 @@
     %li From business to tech
     %li Pragmatic Ruby addict
     %li Active member of the french Ruby community
-  #emphasize-low
+  #emphasize
     %img{:src => "munich2012/vzmind-cloud.png", :width => '300px'}
+%section.slide
+  %h2  Today program :
+  %ul
+    %li Behind Heroku's clouds
+    %li Rails overview
+    %li Facebook API
+    %li= "Salesforce & Force.com "
+    %li How to cook an app
+    %li Examples
 %section.slide
   %h1
     Heroku an introduction
@@ -45,7 +54,7 @@
       %p few figures
 %section.slide
   %h2 Languages
-  #without-pictures
+  #without-pictures-small-font
     %ul
       %li 
         Ruby: 
@@ -70,7 +79,7 @@
       %li 
         Java: 
         %ul
-          %li historical language
+          %li Salesforce historical language
   #pictures
     %img{:src => "munich2012/heroku_languages.png"}
 %section.slide
@@ -163,6 +172,8 @@
   %ul
     %li Leading MVC framework
     %li Web standard de facto
+    %li Open Source
+    %li Using Ruby
     %li 
       Other framework inspired by Rails approach:
       %ul 
@@ -170,7 +181,7 @@
         %li Django
         %li Ember.js
 %section.slide
-  %h2 Success story since 2006 
+  %h2 7 years Success story 
   %img{:src => "munich2012/ruby-wall-fame.png", :width => "750px"}
 %section.slide
   %h2 Why so popular?
@@ -209,11 +220,6 @@
     %code
       Mogli::Album.find(99398305,client)
 %section.slide
-  %h2 How to use it in Ruby ?
-  %ul
-    %li 
-
-%section.slide
   %h1
     Why extending force.com?
 %section.slide
@@ -223,6 +229,8 @@
     %li Writing basic business logic
     %li Quickly delivering ROI on apps that adhere to the frameworks
     %li B2B apps
+  #emphasize-high
+    = "=> Tell me more ... <="
 %section.slide
   %h2 But they are bad at
   %ul
@@ -233,68 +241,64 @@
     %li B2C applications, although this is improving
     %li Large volumes of traffic
     %li cheap/available resources
+  #emphasize-high
+    = "=> What do you think ? <="
 %section.slide
   %h1
     Solving the right problem with the right tool
 %section.slide
-  %h2 Ruby/Python
-  %ul
-    %li purely object oriented language
-    %li Large librairies with excellent web coverage (FTP, HTTP, DB, API)
-  %h2 Java
-  %ul
-    %li Largest develop community - cheap and plentiful resource
-    %li Most widely used language in business - lowered barrier to entry for company owners/CIOs
-     
+  %h2 Pick the right language
+  %ul 
+    %li
+      Ruby/Python
+      %p 
+        Purely object-oriented language
+        %br
+        Numerous librairies dedicated to web fast deliveries (ORM, MVC, API)
+    %li 
+      Java
+      %p 
+        Largest develop community - cheap and plentiful resource
+        %br
+        Most widely used language in business - lowered barrier to entry for company owners/CIOs
+    %li 
+      Scala/Clojure
+      %p 
+        Smart and trendy dialects of Java (usage of Java library, JVM)
+        %br
+        Functional or Dynamic approach
+        %br
+        As fast as java
+    %li
+      Node.js
+      %p
+        Javascript server (YES)
+        %br
+        Event driven server for heavy I/O traffic
 %section.slide
-  %h2 Scala
+  %h2 Pick the right database type
   %ul
-    %li Smart extension of Java (usage of Javava library, JVM)
-    %li Sounds like Ruby/Python, smell like clojure/erlang but it’s scala
-    %li Dynamic
-  %h2 Clojure
-  %ul
-    %li dialect of Lisp, easy to learn
-    %li functional extension of Java (usage of Java library, JVM)
-    %li as fast as java
-    %li dynamic
-%section.slide
-  %h2 Node.js
-  %ul
-    %li Event driven server
-    %li heavy I/O traffic
-%section.slide
-  %h2 Relational databases
-  %ul
-    %li Usual approach of a well structured data with predictable complexity
-  %h2 In memory Key-value Stores
-  %ul
-    %li redis or memcached
-    %li for rapidely changing data
-    %li fast access
-    %li no need to persist data
-    %li use case: stock market, friend feeds
-%section.slide
-  %h2 Document oriented DB
-  %ul
-    %li CouchDB and MongoDB
-    %li non or semi structured document
-    %li massive scaling
-    %li content versionning
-    %li use case:
-%section.slide
-  %h2 Database.com
-  %ul
-    %li connection to your SI
-    %li integration with SFDC
-    %li social DB
-    %li use case: extending SFDC, exposing existing sObjects on public website
-  %h2 BigData approach
-  %ul
-    %li map reduce
-    %li hadoop with Tresure Data
-    %li Data analysis
-
+    %li
+      Relational databases
+      %p Usual approach of a well structured data with predictable complexity
+    %li 
+      In memory Key-value Stores
+      %p 
+        Fastest access
+        %br
+        Use case: stock market, friend feeds
+    %li
+      Document oriented DB
+      %p 
+        Non or semi structured documents
+        %br
+        Use case: social network content, classified
+    %li
+      Database.com
+      %p
+        Cause your business deserves it !!
+        %br
+        Use case: extending SFDC, exposing existing sObjects on public website
 %section.slide
   %h1
     Seeing is believing
@@ -307,9 +311,9 @@
     %li need presentation and access
     %li demo
 %section.slide
-  %h2 WTA architecture schema
+  %h2 Tquila calendar architecture schema
 %section.slide
-  %h2 WTA
+  %h2 Tquila Web-2-anything
   %ul
     %li use case
     %li demo

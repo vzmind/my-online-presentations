@@ -1,3 +1,6 @@
+#slide-5 li{
+  padding: 0;
+}
 #without-pictures-small-font{
   margin-left: 0px;
   font-size: 18px;
@@ -41,6 +44,14 @@
   position: absolute;
   left: 220px;
   bottom: 50px;
+}
+#emphasize-high {
+  position: absolute;
+  left: 220px;
+  bottom: 150px;
+  font-size: 25px;
+  color: orange;
+  font-weight: bold;
 }
 #emphasize-low {
   position: absolute;
