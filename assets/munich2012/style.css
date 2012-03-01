@@ -1,11 +1,33 @@
-#pictures {
-  float: right;
-  width: 50%
-}
-#without-pictures {
-  width: 50%;
+#without-pictures-small-font{
+  margin-left: 0px;
+  font-size: 18px;
+  width: 35%;
   float: left;
 }
+#pictures-enlarged {
+  float: right;
+  width: 65%
+}
+#pictures-enlarged img {
+  width: 80%;
+}
+#without-pictures {
+  width: 35%;
+  float: left;
+}
+#without-pictures li{
+  margin-left: 100px;
+  font-size: 25px;
+}
+
+#pictures {
+  float: right;
+  width: 65%
+}
+#pictures img {
+  width: 70%;
+}
+
 #with-picture ul{
   margin-bottom: 0;
 }
@@ -18,10 +40,10 @@
 #emphasize {
   position: absolute;
   left: 220px;
-  bottom: 100px;
+  bottom: 50px;
 }
 #emphasize-low {
   position: absolute;
-  left: 300px;
+  left: 220px;
   bottom: 50px;
 }

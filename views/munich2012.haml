@@ -6,7 +6,7 @@
     'Enpower your ORG with Heroku'
 %section.slide
   %h1
-    Getting to know each others
+    Getting to know each other
 %section.slide
   %h2  My name is Vincent Spehner
   %ul
@@ -87,7 +87,7 @@
       %li Memcached
   #pictures
     %img{:src => "munich2012/heroku_db_logo.png"}
-  #emphasize
+  #emphasize-low
     = "=> Death of Monolithic databases Hegemony, welcome to Polyglot databases "
 %section.slide
   %h2 Add-ons: Message Queue
@@ -174,7 +174,7 @@
   %img{:src => "munich2012/ruby-wall-fame.png", :width => "750px"}
 %section.slide
   %h2 Why so popular?
-  #without-pictures
+  #without-pictures-small-font
     %ul
       %li Ruby is THE language for developpers
       %li MVC structuring application
@@ -183,9 +183,9 @@
       %li Caching
       %li Scaffolding
       %li Fast development
-  #pictures
+  #pictures-enlarged
     %img{:src => "munich2012/rails-mvc.png"}
-  #emphasize
+  #emphasize-low
     = "=> Fast development .... a proof coming soon"
 %section.slide
   %h2 Market figures
@@ -203,41 +203,36 @@
   %h1
     What’s behind a Facebook app?
 %section.slide
-  %h2 What is the Open Graph API
+  %h2 The Open Graph API
+  %img{:src => "munich2012/facebook-opengraph.png", :width => "450px"}
+  %pre
+    %code
+      Mogli::Album.find(99398305,client)
+%section.slide
+  %h2 How to use it in Ruby ?
   %ul
-    %li How to use it in Ruby ?
+    %li 
 
 %section.slide
   %h1
     Why extending force.com?
 %section.slide
-  %h2 Known limits of Salesforce and force.com (1)
+  %h2 Salesforce & Force.com are good at
   %ul
-    %li Cron limit of 10 jobs in SFDC
-    %p http://www.salesforce.com/us/developer/docs/apexcode/Content/apex_gov_limits.htm
-    %li Put the computation out on heroku
-    %li Data driven website are great on force.com
-    %li Salesforce is expensive to 1000£/Gb/years
-    %li Force.com is B2B tool. The customer portals do solve these problems but in an awkward way - for each authenticated user you need a license. Difficult to predict and budget for. Heroku suit of development languages can be either B2B or B2C and billing is pro rataed on a usage- instead of seat-basis.
-    %p Limits are often unavoidably (i.e. even best practice or creative code won’t solve these issues)  hit for:
+    %li Data driven apps
+    %li Writing basic business logic
+    %li Quickly delivering ROI on apps that adhere to the frameworks
+    %li B2B apps
 %section.slide
-  %h2 Known limits of Salesforce and force.com (2)
+  %h2 But they are bad at
   %ul
-    %li Complex computation
-    %p Computation over large data sets
-    %p computation over broad data models
-    %li heavy front-ends i.e. those that require large viewstates
-    %li large volumes of traffic on Force.com sites
-%section.slide
-  %h2 Known limits of Salesforce and force.com (3)
-  %ul
-    %li large amount of data on SFDC (tree structure too deep => governor limit (Heap size 6Mb) per transaction). Code can only execute a certain number of line per transation(200 000 lines)
-    Use cases
-    BigData mining more intelligently
-    mashing up APIs
-
-
-
+    %li Heavy computation
+    %li Working with large data sets
+    %li Expensive for data storage
+    %li Governor limits cannot be avoided in some cases
+    %li B2C applications, although this is improving
+    %li Large volumes of traffic
+    %li cheap/available resources
 %section.slide
   %h1
     Solving the right problem with the right tool
