@@ -37,6 +37,10 @@ header, footer {
 .introduction .deck-container {
   font-size: 1.25em;
 }
+.deck-container .slide h1{
+  color: orange;
+}
+
 .deck-container .slide h2 {
   border-bottom: 0 none;
   color: orange;

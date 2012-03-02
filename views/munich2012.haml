@@ -8,14 +8,14 @@
   %h1
     Getting to know each other
 %section.slide
-  %h2  My name is Vincent Spehner
+  %h2  Ich HeiB Vincent Spehner aka vzmind
   %ul
     %li From Business to Tech
     %li Pragmatic Ruby addict
     %li Opensource Hacktivist
     %li Active member of the french Ruby community
-  #emphasize
-    %img{:src => "munich2012/vzmind-cloud.png", :width => '300px'}
+  #emphasize-low{:style => "bottom:0px;"}
+    %img{:src => "munich2012/vzmind-cloud.png", :width => '300px', :style => "margin-left:100px;margin-top:50px;"}
 %section.slide
   %h2  Today's program :
   %ul
@@ -34,20 +34,20 @@
     %ul
       %li 
         Cloud app: File sharing solution
-        %img{:src => "munich2012/logo_cloud_app.png"}
+        %img{:src => "munich2012/logo_cloud_app.png", :style => "margin-right:150px;width:200px;"}
         %ul
           %li 1 000 000 users
           %li Heroku + Amazon S3
           %li Sendgrid addon
       %li 
         Diaspora: Open source Facebook
-        %img{:src => "munich2012/logo_diaspora.png"}
+        %img{:src => "munich2012/logo_diaspora.png", :style => "margin-right:150px;width:200px;"}
         %ul
           %li no devops strategy
           %li migration in 5 days
       %li 
         ASICS: support your marathoner
-        %img{:src => "munich2012/logo_asics.png"}
+        %img{:src => "munich2012/logo_asics.png", :style => "margin-right:150px;width:200px;"}
         %ul
           %li 3 weeks dev before LIVE
           %li Live brodacasting of FB, Twitter, video messages
@@ -77,9 +77,7 @@
         %ul
           %li Fast event-based server
       %li 
-        Java: 
-        %ul
-          %li Salesforce historical language
+        Java 
   #pictures
     %img{:src => "munich2012/heroku_languages.png"}
 %section.slide
@@ -209,7 +207,7 @@
   #pictures
     %img{:src => "munich2012/rails-market.jpg"}
   #emphasize
-    = "=> Fast development .... a proof coming soon"
+    = "=> Trend confirmed. Ruby creator hired by Salesforce"
 %section.slide
   %h1
     What’s behind a Facebook app?
@@ -234,18 +232,20 @@
       %li Video
       %li ...
   #pictures
-    %img{:src => "munich2012/facebook-relations.png"}
+    %img{:src => "munich2012/facebook-relations.png", :style => "margin-top:100px;"}
   #emphasize
-    = "=> Get user objects/actions. Define your own."
+    = "=> Get user objects/actions... and define yours !!"
 %section.slide
   %h2 Social design
-  %img{:src => "munich2012/facebook-socialdesign.png", :width => "400px"}
+  %img{:src => "munich2012/facebook-socialdesign.png", :width => "1150px"}
+  %br
+  %h4 Then use your favorite language
   %pre
     %code
       Mogli::Album.find(99398305,client)
 %section.slide
   %h1
-    Why extending force.com?
+    Why extending Force.com?
 %section.slide
   %h2 Salesforce & Force.com are good at
   %ul
@@ -264,7 +264,7 @@
     %li Governor limits cannot be avoided in some cases
     %li B2C applications, although this is improving
     %li Large volumes of traffic
-    %li cheap/available resources
+    %li Cheap/available resources
   #emphasize-high
     = "=> What do you think ? <="
 %section.slide
@@ -324,14 +324,12 @@
         %br
         Use case: extending SFDC, exposing existing sObjects on public website
 %section.slide
-  %h2 Sprinkle with heroku spices
-  %img{:src => "munich2012/APIMixtures.png", :width => "550px"}
+  %h2 Sprinkle with Heroku spices
+  %img{:src => "munich2012/APIMixtures.png", :width => "600px"}
 
 %section.slide
   %h1
     Seeing is believing
-  %p
-    Real use cases with real code
 %section.slide
   %h2 Tquila calendar architecture schema
 %section.slide
@@ -345,8 +343,14 @@
         %li Exchange with your community on Facebook
         %li Integrate a nice web-to-case/lead or anything on your website
         %li Build productivity tools for your sales team
-    %li 
-      Could we see it? 
+  #emphasize{:style => "bottom:150px;margin-left:100px"}
+    %strong
+      Could we see it ?? 
 %section.slide
   %h2 WTA architecture schema
   %img{:src => "munich2012/wta-architecture.png", :width => "850px"}
+%section.slide
+  %h1
+    Questions ? 
+    %br
+    = "=> @vzmind <="

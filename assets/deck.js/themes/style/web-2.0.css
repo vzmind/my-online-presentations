@@ -25,7 +25,7 @@
   opacity: 0.4;
 }
 .deck-container .slide h1, .deck-container .slide h2, .deck-container .slide h3, .deck-container .slide h4, .deck-container .slide h5, .deck-container .slide h6 {
-  font-family: "Hoefler Text", Constantia, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-family: "Tahoma"
 }
 .deck-container .slide h1 {
   color: #08455f;
@@ -96,7 +96,7 @@
   color: #789;
 }
 .deck-container .slide blockquote {
-  font-family: "Hoefler Text", Constantia, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-family: "Tahoma"
   font-size: 2em;
   padding: 1em 2em .5em 2em;
   color: #000;
