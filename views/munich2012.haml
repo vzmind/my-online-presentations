@@ -17,7 +17,7 @@
   #emphasize
     %img{:src => "munich2012/vzmind-cloud.png", :width => '300px'}
 %section.slide
-  %h2  Today program :
+  %h2  Today's program :
   %ul
     %li Behind Heroku's clouds
     %li Rails overview
@@ -52,7 +52,6 @@
           %li 3 weeks dev before LIVE
           %li Live brodacasting of FB, Twitter, video messages
           %li Fast enconding using Zencoder
-      %p few figures
 %section.slide
   %h2 Languages
   #without-pictures-small-font
@@ -216,7 +215,31 @@
     What’s behind a Facebook app?
 %section.slide
   %h2 The Open Graph API
-  %img{:src => "munich2012/facebook-opengraph.png", :width => "450px"}
+  %img{:src => "munich2012/facebook-opengraph.png", :width => "550px"}
+%section.slide
+  %h2 Facebook standard Objects
+  #without-pictures-small-font
+    %ul
+      %li Album
+      %li Application
+      %li Comment
+      %li Event
+      %li FriendList
+      %li Group
+      %li Order
+      %li Photo
+      %li Question
+      %li Status message
+      %li User
+      %li Video
+      %li ...
+  #pictures
+    %img{:src => "munich2012/facebook-relations.png"}
+  #emphasize
+    = "=> Get user objects/actions. Define your own."
+%section.slide
+  %h2 Social design
+  %img{:src => "munich2012/facebook-socialdesign.png", :width => "400px"}
   %pre
     %code
       Mogli::Album.find(99398305,client)
@@ -302,6 +325,7 @@
         Use case: extending SFDC, exposing existing sObjects on public website
 %section.slide
   %h2 Sprinkle with heroku spices
+  %img{:src => "munich2012/APIMixtures.png", :width => "550px"}
 
 %section.slide
   %h1
